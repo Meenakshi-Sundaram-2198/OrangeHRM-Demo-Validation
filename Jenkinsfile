@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         // Specify the Maven tool to use (must be installed in Jenkins)
-        git 'Default'
+        git 'Git'
         maven 'Maven3'  // This is a tool name configured in Jenkins
     }
     stages {
