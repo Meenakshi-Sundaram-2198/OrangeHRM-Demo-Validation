@@ -15,19 +15,20 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Maven build command
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
                 // Run tests using Maven
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
         stage('Deploy') {
             steps {
+				echo 'No deployment currently.'
                 // Deploy the artifact (optional)
-                sh 'mvn deploy'
+                // bat'mvn deploy'
             }
         }
     }
