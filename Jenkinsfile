@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         // Specify the Maven tool to use (must be installed in Jenkins)
-        maven 'Maven 3.9.9'  // This is a tool name configured in Jenkins
+        maven 'Maven3'  // This is a tool name configured in Jenkins
     }
     stages {
         stage('Checkout') {
